@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="objetos">
+            <a href="../index.html">Inicio</a>
+            <a href="#">Contacto</a>
+            <a href="../index.html">Noticias</a>
+            <a href="#">Acerca de Nosotros</a>
+        </div>
+
+        <div class="redes-sociales">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+        </div>
+    </header>
+
+    <main>
+        <form class="formulario">
+            <div class="titulo">
+                <h1>REGISTRO DE CARNET UNIVERSITARIO</h1>
+            </div>
+            <div class="datos-personales">
+                <div class="input-nombre decoration">
+                    <label for="nombre">Nombre Completo</label>
+                    <div class="input">
+                        <input type="text" id="nombre">
+                        <i class='bx bx-user'></i>
+                    </div>
+                        
+                </div>      
+                <div class="input-apellido decoration">
+                    <label for="apellido">Apellido Completo</label>
+                    <div class="input">
+                        <input type="text" id="apellido">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="input-cedula decoration">
+                <label for="cedula">Ingrese su Cédula</label>
+                <div class="input">
+                    <input type="text"  id="cedula">
+                    <i class='bx bxs-id-card'></i>
+                </div>
+            </div>
+            <div class="input-carrera decoration">
+                <label for="carrera">Ingrese su Carrera</label>
+                <div class="input">
+                    <select id="carrera" >
+                        <option value="carrera">Administración</option>
+                        <option value="carrera">Contaduría Pública</option>
+                        <option value="carrera">Distribución y Logística</option>
+                        <option value="carrera">Educación Inicial</option>
+                        <option value="carrera">Educación Especial</option>
+                        <option value="carrera">Informática</option>
+                        <option value="carrera">Trabajo Social</option>
+                        <option value="carrera">Turismo</option>
+                    </select>
+                    <i class='bx bxs-graduation'></i>
+                </div>
+            </div>
+
+
+            <div class="input-foto decoration-foto">
+                <div class="input-file">
+                    <label for="foto">Ingrese Una foto</label>
+                    <input type="file" name="file" id="foto" accept=".jpg">    
+                </div>
+                <div id="preview" class="carga-imagen">
+                    <img src="imagen-default.jpg" id="img" alt="foto">
+                </div>
+            </div>
+
+            <div class="mensaje-info">
+                <p>Estimado usuario, en la sección de foto, es importante tener en cuenta que la foto debe tener un fondo blanco, sin nada que obstaculice la visualización de su rostro, gracias por su cooperación.</p>
+            </div>
+
+            <div class="btn">
+                <a class="btn-regresar" href="#">Regresar</a>
+                <a class="btn-enviar" href="#">Enviar</a>
+            </div>
+        </form>
+    </main>
+
+
+<script src="codigo.js"></script>
+</body>
+</html>
